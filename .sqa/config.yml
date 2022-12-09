@@ -1,0 +1,62 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-reporting-plugins:
+      branch: main
+      repo: https://github.com/eosc-synergy/sqaaas-reporting-plugins
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/eosc-synergy/sqaaas-reporting-plugins git:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-ochre-bombay.sh
+        container: qc.acc_geeky-blue-tzu
+  QC.Doc:
+    repos:
+      github.com/eosc-synergy/sqaaas-reporting-plugins find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cloudy-malachite-turkey.sh
+        container: qc.doc_smelly-cardinal-turtle
+      github.com/eosc-synergy/sqaaas-reporting-plugins git:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-teal-coyote.sh
+        container: qc.doc_homey-amber-setter
+      github.com/eosc-synergy/sqaaas-reporting-plugins markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cheeky-purple-capuchin.sh
+        container: qc.doc_chewy-black-squirrel
+  QC.Lic:
+    repos:
+      github.com/eosc-synergy/sqaaas-reporting-plugins licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.bluesy-puce-chameleon.sh
+        container: qc.lic_fuzzy-violet-abyssinian
+  QC.Sec:
+    repos:
+      github.com/eosc-synergy/sqaaas-reporting-plugins bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-thistle-gopher.sh
+        container: qc.sec_smelly-amethyst-affenpinscher
+  QC.Sty:
+    repos:
+      github.com/eosc-synergy/sqaaas-reporting-plugins flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.pretty-cerise-raccoon.sh
+        container: qc.sty_dorky-rose-lion
+      github.com/eosc-synergy/sqaaas-reporting-plugins jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.baggy-firebrick-monster.sh
+        container: qc.sty_bluesy-white-coati
+  QC.Ver:
+    repos:
+      github.com/eosc-synergy/sqaaas-reporting-plugins get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cozy-alizarin-ant.sh
+        container: qc.ver_squeaky-teal-fossa
+timeout: 5400
