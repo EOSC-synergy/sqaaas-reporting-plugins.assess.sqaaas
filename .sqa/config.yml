@@ -15,60 +15,60 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-sangria-chihuahua.sh
-        container: qc.acc_slimy-cyan-otter
+        - /usr/bin/env sh .sqa/script.smelly-cardinal-urchin.sh
+        container: qc.acc_cozy-sepia-cat
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-ruby-dane.sh
-        container: qc.doc_stinky-chocolate-skunk
+        - /usr/bin/env sh .sqa/script.sleepy-ivory-chow.sh
+        container: qc.doc_skimpy-azure-drever
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-lavender-civet.sh
-        container: qc.doc_randy-aquamarine-bee
+        - /usr/bin/env sh .sqa/script.gloppy-green-frise.sh
+        container: qc.doc_freaky-ultramarine-zonkey
       github.com/EOSC-synergy/sqaaas-reporting-plugins markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-chartreuse-snail.sh
-        container: qc.doc_nippy-taupe-dogfish
+        - /usr/bin/env sh .sqa/script.trippy-smalt-clam.sh
+        container: qc.doc_smelly-xanthic-uakari
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-amethyst-bracke.sh
-        container: qc.lic_nippy-puce-fossa
+        - /usr/bin/env sh .sqa/script.wheezy-blue-tamarin.sh
+        container: qc.lic_chewy-mauve-otter
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-green-penguin.sh
-        container: qc.met_gamy-cardinal-budgerigar
+        - /usr/bin/env sh .sqa/script.smelly-cobalt-labradoodle.sh
+        container: qc.met_hilly-azure-alligator
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-cerise-harrier.sh
-        container: qc.sec_boozy-black-dunker
+        - /usr/bin/env sh .sqa/script.blurry-green-kiwi.sh
+        container: qc.sec_wiggy-viridian-vole
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-brass-javanese.sh
-        container: qc.sty_trippy-turquoise-mongrel
+        - /usr/bin/env sh .sqa/script.lousy-pumpkin-owl.sh
+        container: qc.sty_thirsty-celadon-rat
       github.com/EOSC-synergy/sqaaas-reporting-plugins jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-viridian-chow.sh
-        container: qc.sty_scaly-grey-weasel
+        - /usr/bin/env sh .sqa/script.messy-amber-yak.sh
+        container: qc.sty_gummy-peach-cassowary
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-harlequin-otter.sh
-        container: qc.uni_muzzy-black-bullfrog
+        - /usr/bin/env sh .sqa/script.chummy-celadon-abyssinian.sh
+        container: qc.uni_lovely-viridian-cuttlefish
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-cinnabar-uakari.sh
-        container: qc.ver_droopy-seashell-lionfish
+        - /usr/bin/env sh .sqa/script.craggy-sangria-owl.sh
+        container: qc.ver_cheeky-cerulean-mongrel
 timeout: 5400
