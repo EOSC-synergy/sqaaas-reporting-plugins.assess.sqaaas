@@ -15,60 +15,60 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.isabelline_imaginative_bullfrog.sh
-        container: qc.acc_lemon_worried_chipmunk
+        - /usr/bin/env sh .sqa/script.frost_productive_serval.sh
+        container: qc.acc_aqua_attentive_barracuda
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.claret_nervous_dormouse.sh
-        container: qc.doc_raspberry_thankful_hippopotamus
+        - /usr/bin/env sh .sqa/script.bluebell_fearless_elephant.sh
+        container: qc.doc_wheat_meticulous_porpoise
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunset_resilient_llama.sh
-        container: qc.doc_plum_mindful_quokka
+        - /usr/bin/env sh .sqa/script.turmeric_enthusiastic_camel.sh
+        container: qc.doc_aquamarine_peppy_peacock
       github.com/EOSC-synergy/sqaaas-reporting-plugins markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.peony_elated_tortoise.sh
-        container: qc.doc_beige_energetic_chimpanzee
+        - /usr/bin/env sh .sqa/script.thistle_hardworking_cormorant.sh
+        container: qc.doc_verdant_polite_donkey
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pineapple_mischievous_porpoise.sh
-        container: qc.lic_flint_wise_marmoset
+        - /usr/bin/env sh .sqa/script.reef_optimistic_ferret.sh
+        container: qc.lic_cinnamon_fierce_kookaburra
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.teal_spontaneous_wolverine.sh
-        container: qc.met_lilac_delighted_koala
+        - /usr/bin/env sh .sqa/script.indigo_methodical_falcon.sh
+        container: qc.met_nutmeg_foolish_falcon
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.seafoam_unique_wolf.sh
-        container: qc.sec_tundra_foolish_groundhog
+        - /usr/bin/env sh .sqa/script.tundra_tolerant_badger.sh
+        container: qc.sec_silver_thankful_puffin
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.turmeric_perceptive_ocelot.sh
-        container: qc.sty_beige_exuberant_squirrel
+        - /usr/bin/env sh .sqa/script.linen_shy_armadillo.sh
+        container: qc.sty_sand_curious_dhole
       github.com/EOSC-synergy/sqaaas-reporting-plugins jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.heather_apathetic_beaver.sh
-        container: qc.sty_dahlia_carefree_koala
+        - /usr/bin/env sh .sqa/script.walnut_compassionate_vulture.sh
+        container: qc.sty_frost_graceful_nymph
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.carmine_zany_mandrill.sh
-        container: qc.uni_bone_trustworthy_mandrill
+        - /usr/bin/env sh .sqa/script.persimmon_peppy_hippopotamus.sh
+        container: qc.uni_pansy_hardworking_panda
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.turquoise_respectful_cockatoo.sh
-        container: qc.ver_pineapple_peppy_chipmunk
+        - /usr/bin/env sh .sqa/script.silver_vibrant_hare.sh
+        container: qc.ver_ebony_lively_whale
 timeout: 5400
