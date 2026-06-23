@@ -5,7 +5,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint_fix
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,60 +15,60 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.aqua_visionary_snail.sh
-        container: qc.acc_carmine_vigilant_kiwi
+        - /usr/bin/env sh .sqa/script.taupe_organized_vulture.sh
+        container: qc.acc_red_feisty_kiwi
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cobalt_cranky_ferret.sh
-        container: qc.doc_rosewater_innocent_eel
+        - /usr/bin/env sh .sqa/script.sapphire_clever_buffalo.sh
+        container: qc.doc_champagne_gracious_turtle
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.storm_upbeat_shark.sh
-        container: qc.doc_coffee_humble_bat
+        - /usr/bin/env sh .sqa/script.periwinkle_reserved_finch.sh
+        container: qc.doc_cardamom_dramatic_alligator
       github.com/EOSC-synergy/sqaaas-reporting-plugins markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slate_smart_orangutan.sh
-        container: qc.doc_banana_insightful_hedgehog
+        - /usr/bin/env sh .sqa/script.lavender_protective_shark.sh
+        container: qc.doc_pistachio_independent_capybara
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.umber_honest_emu.sh
-        container: qc.lic_ochre_mature_osprey
+        - /usr/bin/env sh .sqa/script.lime_calm_wolf.sh
+        container: qc.lic_tan_bright_shark
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.fuchsia_silly_camel.sh
-        container: qc.met_fern_wondrous_viper
+        - /usr/bin/env sh .sqa/script.azure_focused_iguana.sh
+        container: qc.met_orange_careful_hawk
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pineapple_eccentric_bullfrog.sh
-        container: qc.sec_fern_bright_weasel
+        - /usr/bin/env sh .sqa/script.porcelain_loyal_panther.sh
+        container: qc.sec_mist_attentive_reindeer
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.mango_content_tiger.sh
-        container: qc.sty_wine_delighted_rhinoceros
+        - /usr/bin/env sh .sqa/script.iris_generous_griffin.sh
+        container: qc.sty_rosewater_sociable_marmoset
       github.com/EOSC-synergy/sqaaas-reporting-plugins jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pineapple_tolerant_jackal.sh
-        container: qc.sty_apricot_mysterious_crow
+        - /usr/bin/env sh .sqa/script.sunset_relaxed_impala.sh
+        container: qc.sty_mustard_zealous_ocelot
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.umber_meticulous_phoenix.sh
-        container: qc.uni_eggplant_grateful_dormouse
+        - /usr/bin/env sh .sqa/script.horizon_understanding_wolverine.sh
+        container: qc.uni_rust_organized_anaconda
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.viridian_jubilant_grasshopper.sh
-        container: qc.ver_periwinkle_calm_mongoose
+        - /usr/bin/env sh .sqa/script.sage_resilient_porcupine.sh
+        container: qc.ver_fuchsia_reflective_wasp
 timeout: 5400
