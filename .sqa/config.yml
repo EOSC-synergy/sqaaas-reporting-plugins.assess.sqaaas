@@ -1,8 +1,13 @@
 config:
-  credentials: []
+  credentials:
+  - id: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
+    password_var: GIT_PASSWORD
+    username_var: GIT_USER
   project_repos:
     github.com/EOSC-synergy/sqaaas-reporting-plugins:
       branch: main
+      credential_tmp: true
+      credentials_id: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
       repo: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: fix/updatego
@@ -15,60 +20,60 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.red_organized_hummingbird.sh
-        container: qc.acc_lilac_fearless_kiwi
+        - /usr/bin/env sh .sqa/script.amaranth_assured_elk.sh
+        container: qc.acc_cream_rational_rattlesnake
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.apricot_humorous_spren.sh
-        container: qc.doc_horizon_thoughtful_grizzly
+        - /usr/bin/env sh .sqa/script.claret_fearless_lynx.sh
+        container: qc.doc_bone_nurturing_moose
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.lavender_studious_nighthawk.sh
-        container: qc.doc_polar_thankful_penguin
+        - /usr/bin/env sh .sqa/script.bluebell_confident_wildcat.sh
+        container: qc.doc_ultramarine_respectful_hamster
       github.com/EOSC-synergy/sqaaas-reporting-plugins markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.daffodil_friendly_seahorse.sh
-        container: qc.doc_raspberry_practical_hedgehog
+        - /usr/bin/env sh .sqa/script.teal_dreamy_orca.sh
+        container: qc.doc_turquoise_philosophical_boa
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cherry_wise_wolverine.sh
-        container: qc.lic_paprika_adaptable_gerbil
+        - /usr/bin/env sh .sqa/script.crimson_cheerful_cockatoo.sh
+        container: qc.lic_azure_insightful_okapi
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.green_exuberant_pelican.sh
-        container: qc.met_verdant_assured_manta
+        - /usr/bin/env sh .sqa/script.espresso_feisty_macaw.sh
+        container: qc.met_wisteria_intuitive_gnu
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.coral_realistic_rabbit.sh
-        container: qc.sec_wine_motivated_jackal
+        - /usr/bin/env sh .sqa/script.scarlet_sad_moth.sh
+        container: qc.sec_wheat_analytical_groundhog
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.caramel_authentic_swan.sh
-        container: qc.sty_flax_perceptive_lemur
+        - /usr/bin/env sh .sqa/script.cherry_brave_sparrow.sh
+        container: qc.sty_prussian_frugal_mink
       github.com/EOSC-synergy/sqaaas-reporting-plugins jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flax_shy_buffalo.sh
-        container: qc.sty_lilac_peaceful_boa
+        - /usr/bin/env sh .sqa/script.indigo_sincere_cheetah.sh
+        container: qc.sty_mulberry_zealous_badger
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sienna_savvy_newt.sh
-        container: qc.uni_beige_energetic_dragonfly
+        - /usr/bin/env sh .sqa/script.taupe_humble_phoenix.sh
+        container: qc.uni_jet_artistic_falcon
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.mango_adventurous_platypus.sh
-        container: qc.ver_sapphire_plucky_narwhal
+        - /usr/bin/env sh .sqa/script.persimmon_cheerful_butterfly.sh
+        container: qc.ver_tide_exuberant_jackal
 timeout: 5400
