@@ -1,8 +1,13 @@
 config:
-  credentials: []
+  credentials:
+  - id: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
+    password_var: GIT_PASSWORD
+    username_var: GIT_USER
   project_repos:
     github.com/EOSC-synergy/sqaaas-reporting-plugins:
       branch: main
+      credential_tmp: true
+      credentials_id: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
       repo: https://github.com/EOSC-synergy/sqaaas-reporting-plugins
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: fix/updatego
@@ -15,60 +20,60 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.cardamom_brave_goat.sh
-        container: qc.acc_frost_spirited_sparrow
+        - /usr/bin/env sh .sqa/script.papaya_vigilant_swan.sh
+        container: qc.acc_wine_harmonious_chameleon
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.aqua_patient_chipmunk.sh
-        container: qc.doc_lime_productive_owl
+        - /usr/bin/env sh .sqa/script.mist_worried_warthog.sh
+        container: qc.doc_magenta_foolish_komodo
       github.com/EOSC-synergy/sqaaas-reporting-plugins git:
         commands:
-        - /usr/bin/env sh .sqa/script.glaucous_smart_squirrel.sh
-        container: qc.doc_cinnabar_whimsical_butterfly
+        - /usr/bin/env sh .sqa/script.boysenberry_happy_iguana.sh
+        container: qc.doc_puce_relaxed_cougar
       github.com/EOSC-synergy/sqaaas-reporting-plugins markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wave_romantic_manatee.sh
-        container: qc.doc_steel_sincere_dugong
+        - /usr/bin/env sh .sqa/script.cerulean_reckless_stingray.sh
+        container: qc.doc_cobalt_carefree_goat
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.apricot_melancholy_jellyfish.sh
-        container: qc.lic_bone_industrious_cormorant
+        - /usr/bin/env sh .sqa/script.wine_audacious_raven.sh
+        container: qc.lic_ruby_honest_owl
   QC.Met:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.chestnut_thankful_opossum.sh
-        container: qc.met_arctic_whimsical_horse
+        - /usr/bin/env sh .sqa/script.gray_diligent_marmoset.sh
+        container: qc.met_paprika_candid_quokka
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.cardamom_witty_parrot.sh
-        container: qc.sec_pansy_intuitive_boar
+        - /usr/bin/env sh .sqa/script.claret_spontaneous_seal.sh
+        container: qc.sec_chestnut_balanced_cormorant
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cerulean_bold_moose.sh
-        container: qc.sty_ice_outgoing_warthog
+        - /usr/bin/env sh .sqa/script.wine_dedicated_dormouse.sh
+        container: qc.sty_nutmeg_rugged_lynx
       github.com/EOSC-synergy/sqaaas-reporting-plugins jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.brown_thoughtful_whale.sh
-        container: qc.sty_glacier_productive_panther
+        - /usr/bin/env sh .sqa/script.strawberry_cheerful_toucan.sh
+        container: qc.sty_celadon_protective_goose
   QC.Uni:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.dusk_playful_ferret.sh
-        container: qc.uni_cayenne_sympathetic_moose
+        - /usr/bin/env sh .sqa/script.cloud_open_horse.sh
+        container: qc.uni_sienna_humble_piranha
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-reporting-plugins get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.salmon_reflective_flounder.sh
-        container: qc.ver_mist_bold_raven
+        - /usr/bin/env sh .sqa/script.iris_imaginative_wolverine.sh
+        container: qc.ver_dusk_peppy_quoll
 timeout: 5400
